@@ -36,6 +36,6 @@ EXPOSE 15672
 #ENV PATH $JMETER_HOME/bin:$PATH
 COPY amqp-client-3.0.3.jar /jmeter/apache-jmeter-3.2/lib/
 COPY JMeterAMQP.jar /jmeter/apache-jmeter-3.2/lib/ext/
-COPY Test_Plan-RabbitMQ.jmx /jmeter/apache-jmeter-3.2/bin/
+#COPY Test_Plan-RabbitMQ.jmx /jmeter/apache-jmeter-3.2/bin/
 #ENTRYPOINT /bin/bash
 #ENTRYPOINT  /jmeter/apache-jmeter-3.2/bin/jmeter -n -t   /jmeter/apache-jmeter-3.2//bin/Test_Plan-RabbitMQ.jmx -l  /jmeter/apache-jmeter-3.2/RabbitAMQ.jtl
